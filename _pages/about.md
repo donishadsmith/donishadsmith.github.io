@@ -25,4 +25,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I have a PhD in Cognitive Neuroscience from Florida International University. I specialize in fMRI analysis (static and dynamic functional connectivity) and build open-source tools for neuroimaging and data science.
+I'm a cognitive neuroscientist with a PhD from Florida International University, now a Postdoctoral Research Fellow at Johns Hopkins School of Medicine. I specialize in fMRI analysis (static and dynamic functional connectivity) and build open-source tools for neuroimaging and data science.
