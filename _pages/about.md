@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
@@ -25,4 +25,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Cognitive Neuroscience PhD graduate from Florida International University and am currently a Postdoctoral Research Fellow at Johns Hopkins University School of Medicine. I specialize in fMRI analysis and scientific software development. Additionally, I also develop Python and R packages for neuroimaging analysis and data science applications.
+I hold a PhD in Cognitive Neuroscience from Florida International University and am currently a Postdoctoral Research Fellow at Johns Hopkins University School of Medicine. I specialize in fMRI analysis (static and dynamic functional connectivity) and build open-source tools for neuroimaging and data science.
