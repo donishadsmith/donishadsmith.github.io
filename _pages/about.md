@@ -2,12 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Postdoctoral Research Fellow, Johns Hopkins University School of Medicine
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>Baltimore, Maryland</p>
 
@@ -25,4 +25,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I hold a PhD in Cognitive Neuroscience from Florida International University and am currently a Postdoctoral Research Fellow at Johns Hopkins University School of Medicine. I specialize in fMRI analysis (static and dynamic functional connectivity) and build open-source tools for neuroimaging and data science.
+I have a PhD in Cognitive Neuroscience from Florida International University. I specialize in fMRI analysis (static and dynamic functional connectivity) and build open-source tools for neuroimaging and data science.
