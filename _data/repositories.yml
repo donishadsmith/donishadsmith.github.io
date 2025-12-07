@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - donishadsmith
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - donishadsmith/nifti2bids
+  - donishadsmith/neurocaps
+  - donishadsmith/vswift
+  - donishadsmith/FIU-DEI-R-Workshop
+  - donishadsmith/ABCD-Descriptive-Inferential-Stats
