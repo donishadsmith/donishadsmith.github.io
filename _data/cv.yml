@@ -38,25 +38,25 @@
   type: time_table
   contents:
     - title: Postdoctoral Researcher
-      institution: Johns Hopkins University School of Medicine, Baltimore, Maryland, USA
+      institution: Johns Hopkins University School of Medicine, Baltimore, Maryland
       year: 2025 - Current
       description:
         - Developed and deployed nifti2bids, a Python package that automated conversion of the lab's unstructured task-based neuroimaging datasets to Brain Imaging Data Structure (BIDS)-compliant format, enabling integration with modern analysis pipelines
         - Migrated computational workflows to HPC clusters and built reproducible preprocessing pipelines using Singularity containers, improving scalability and reproducibility
     - title: Graduate Researcher
-      institution: Florida International University, Miami, Florida, USA
+      institution: Florida International University, Miami, Florida
       year: 2019 - 2025
       description:
         - Built post-processing pipelines using fMRIPrep and MRIQC outputs to extract and denoise timeseries data, minimizing motion artifacts for downstream statistical modeling
         - Performed neuroimaging analyses (static and dynamic functional connectivity) and behavioral modeling (linear mixed models, latent profile analysis, structural equation modeling) on longitudinal datasets
         - Provided statistical consultation on collaborative projects, applying latent and linear methods to neuroimaging and tabular data
     - title: Graduate Teaching Assistant
-      institution: Florida International University, Miami, Florida, USA
+      institution: Florida International University, Miami, Florida
       year: 2020 - 2022
       description:
         - Provided instructional support and targeted tutoring for undergraduate psychology statistics courses
     - title: Medical Laboratory Scientist I
-      institution: Florida Department of Health, Florida, USA
+      institution: Florida Department of Health, Miami, Florida
       year: 2019
       description:
         - Conducted confirmatory diagnostic testing for HIV and syphilis for public health surveillance programs
@@ -86,12 +86,12 @@
 - title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/donishadsmith/FIU-DEI-R-Workshop">Introduction to R Workshop</a>
+    - title: <a href="https://github.com/donishadsmith/R-Workshop">Introduction to R Workshop</a>
       year: 2023
       description:
         - Designed and delivered an interactive workshop for the Diversity, Equity, and Inclusion program at FIU
         - Covered several fundamental R programming concepts (data structures, Tidyverse, etc)
-    - title: <a href="https://github.com/donishadsmith/ABCD-Descriptive-Inferential-Stats">Adolescent Brain Cognitive Development (ABCD) Study Annual Meeting</a>
+    - title: <a href="https://github.com/donishadsmith/ABCD-Employee-Demographics">Adolescent Brain Cognitive Development (ABCD) Study Annual Meeting</a>
       year: 2022
       description:
         - Analyzed ABCD study demographics using R, implementing descriptive statistics, hypothesis testing, and data visualizations
@@ -159,8 +159,8 @@
   type: map
   contents:
     - name: Programming Languages
-      value: Python (NumPy, Pandas, Scikit-Learn, Scipy, Matplotlib, Plotly, Spark), R (Tidyverse), Shell Scripting (Bash), SQL
+      value: Python, R, Shell Scripting (Bash), SQL
     - name: Computing & Development
-      value: High-Performance Computing, CI/CD (Git, GitHub Actions, Codecov, Docker, Singularity)
+      value: High-Performance Computing, CI/CD (Git, GitHub Actions, Docker, Singularity)
     - name: Neuroimaging Tools
-      value: Nibabel, Nilearn, fMRIPrep, AFNI, EPRIME, PsychoPy
+      value: Nilearn, fMRIPrep, AFNI, EPRIME, PsychoPy
