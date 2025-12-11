@@ -41,14 +41,17 @@
       institution: Johns Hopkins University School of Medicine, Baltimore, Maryland
       year: 2025 - Current
       description:
-        - Developed and deployed nifti2bids, a Python package that automated conversion of the lab's unstructured task-based neuroimaging datasets to Brain Imaging Data Structure (BIDS)-compliant format, enabling integration with modern analysis pipelines
-        - Migrated computational workflows to HPC clusters and built reproducible preprocessing pipelines using Singularity containers, improving scalability and reproducibility
+        - Built automated pipelines to convert unstructured neuroimaging and behavioral datasets to BIDS-compliant format for integration with modern analysis tools
+        - Migrated workflows to HPC clusters and containerized pipelines with Singularity to ensure consistent execution across compute environments
     - title: Graduate Researcher
       institution: Florida International University, Miami, Florida
       year: 2019 - 2025
       description:
-        - Built post-processing pipelines using fMRIPrep and MRIQC outputs to extract and denoise timeseries data, minimizing motion artifacts for downstream statistical modeling
-        - Performed neuroimaging analyses (static and dynamic functional connectivity) and behavioral modeling (linear mixed models, latent profile analysis, structural equation modeling) on longitudinal datasets
+        - Developed a k-means clustering pipeline to characterize dynamic brain state changes associated with learning in longitudinal fMRI timeseries data
+        - Built post-processing pipelines using fMRIPrep and MRIQC to extract and denoise timeseries data, minimizing motion artifacts and increasing signal-to-noise for downstream statistical modeling
+        - Created statistical models (e.g. Linear Mixed Effects, Structural Equation Modeling, Latent Profile Analysis) to examine brain-behavioral relationships
+        - Analyzed staff demographic data for the ABCD Study consortium using R, implementing hypothesis testing and data visualization to inform decisions for a multi-site research task force
+        - Designed and delivered an introductory workshop on R programming and Tidyverse for the Diversity, Equity, and Inclusion program, instructing 20+ graduate students on data manipulation and visualization
         - Provided statistical consultation on collaborative projects, applying latent and linear methods to neuroimaging and tabular data
     - title: Graduate Teaching Assistant
       institution: Florida International University, Miami, Florida
@@ -67,35 +70,20 @@
     - title: <a href="https://github.com/donishadsmith/nifti2bids">nifti2bids</a>
       year: 2025 - Current
       description:
-        - Developed a Python package containing utilities to extract and compute MRI acquisition parameters (e.g. single-band and multi-band slice timing) from NIfTI headers for BIDS sidecar generation
+        - Developed a Python package to standardize unstructured neuroimaging datasets by creating utilities to create and extract metadata information (e.g. single and multi-band slice timing) from NIfTI headers for BIDS sidecar generation
         - Created tools to parse and convert semi-structured behavioral experiment data (including proprietary E-Prime formats) into BIDS-compliant event files
-        - Implemented metadata extraction utilities for single and multi-band slice timing, image acquisition parameters, and image properties from NIfTI headers
     - title: <a href="https://github.com/donishadsmith/neurocaps">NeuroCAPs</a>
       year: 2024 - Current
       description:
-        - Developed an open-source Python package for fMRI brain state identification using k-means, leveraging multiprocessing and memoization to significantly reduce multi-subject computation time
-        - Incorporated multiple clustering validation metrics, KD-tree based spatial interpolation, temporal dynamic metrics for downstream statistical analyses, and a comprehensive visualization suite
-        - Deployed via Docker with headless rendering and flexible CLI/Jupyter interfaces; maintained >90% test coverage across multiple OS platforms using pytest and GitHub Actions
+        - Developed a Python package for fMRI brain state identification using k-means, achieving 5x faster multi-subject processing via multiprocessing with checkpointing support
+        - Incorporated clustering validation (e.g. Davies-Bouldin, Silhouette), KD-tree interpolation for volumetric-to-surface mapping, temporal dynamics metrics (e.g. transition probabilities), and an interactive visualization suite
+        - Deployed via Docker with headless VTK rendering and CLI/Jupyter interfaces; maintained >90% test coverage across OS platforms using pytest and GitHub Actions
     - title: <a href="https://github.com/donishadsmith/vswift">vswift</a>
       year: 2023 - Current
       description:
-        - Created an open-source R package for ML model evaluation with custom stratified sampling, cross-validation, and nested cross-validation, with fold-level multiprocessing
-        - Designed a unified interface supporting multiple classifiers (Logistic Regression, SVM, XGBoost, Neural Networks) while preserving algorithm-specific parameter flexibility
-        - Automated missing data imputation and multi-metric assessment (precision, recall, F1) with ROC/Precision-Recall visualizations and AUC computation using trapezoidal rule
-
-- title: Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/donishadsmith/R-Workshop">Introduction to R Workshop</a>
-      year: 2023
-      description:
-        - Designed and delivered an interactive workshop for the Diversity, Equity, and Inclusion program at FIU
-        - Covered several fundamental R programming concepts (data structures, Tidyverse, etc)
-    - title: <a href="https://github.com/donishadsmith/ABCD-Employee-Demographics">Adolescent Brain Cognitive Development (ABCD) Study Annual Meeting</a>
-      year: 2022
-      description:
-        - Analyzed ABCD study demographics using R, implementing descriptive statistics, hypothesis testing, and data visualizations
-        - Presented statistical findings and methodology at the 2022 Annual Meeting to a research task force
+        - Created an R package for ML model evaluation, implementing custom stratified sampling, cross-validation, and nested cross-validation for hyperparameter tuning, with parallel processing support at the fold-level
+        - Designed a unified interface supporting classification algorithms (e.g., Regularized Logistic Regression, SVM, XGBoost, Neural Networks) while preserving algorithm-specific parameter tuning
+        - Incorporated automated missing data imputation and multi-metric performance assessment (precision, recall, F1) with CLI output and visualizations, including ROC and Precision-Recall curves with AUC scores using trapezoidal rule
 
 - title: Honors and Awards
   type: time_table
