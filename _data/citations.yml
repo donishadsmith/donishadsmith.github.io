@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-01-02'
+  last_updated: '2026-06-26'
 papers:
   RtHtvWUAAAAJ:2osOgNQ5qMEC:
-    citations: 24
+    citations: 35
     title: 'Neural systems underlying RDoC social constructs: An activation likelihood estimation meta-analysis'
     year: '2023'
   RtHtvWUAAAAJ:9yKSN-GCB0IC:
@@ -10,7 +10,7 @@ papers:
     title: Verified details
     year: Unknown Year
   RtHtvWUAAAAJ:IjCSPb-OGe4C:
-    citations: 0
+    citations: 2
     title: 'NeuroCAPs: a Python package for performing co-activation patterns analyses on resting-state and task-based fMRI data'
     year: '2025'
   RtHtvWUAAAAJ:Tyk-4Ss8FVUC:
@@ -18,8 +18,8 @@ papers:
     title: Hippocampal functional connectivity changes associated with active and lecture-based physics learning
     year: '2025'
   RtHtvWUAAAAJ:UeHWp8X0CEIC:
-    citations: 0
-    title: 'Social Profiles among Youth with Attention-Deficit/Hyperactivity Disorder (ADHD): Evidence from the ABCD Study'
+    citations: 2
+    title: 'Social profiles among youth with attention-deficit/hyperactivity disorder (ADHD): Evidence from the ABCD study'
     year: '2025'
   RtHtvWUAAAAJ:W7OEmFMy1HYC:
     citations: 0
@@ -29,6 +29,10 @@ papers:
     citations: 0
     title: neurocaps 0.16. 3. post0
     year: Unknown Year
+  RtHtvWUAAAAJ:YsMSGLbcyi4C:
+    citations: 1
+    title: Task-based attentional and default mode connectivity associated with STEM anxiety profiles among university physics students
+    year: '2022'
   RtHtvWUAAAAJ:d1gkVwhDpl0C:
     citations: 11
     title: Task-based attentional and default mode connectivity associated with science and math anxiety profiles among university physics students
@@ -40,7 +44,7 @@ papers:
   RtHtvWUAAAAJ:u-x6o8ySG0sC:
     citations: 0
     title: Habenula alterations in resting state functional connectivity among autistic individuals
-    year: '2025'
+    year: '2026'
   RtHtvWUAAAAJ:zYLM7Y9cAGgC:
     citations: 0
     title: 'Ethnic Identity Profiles Among Adolescents in the ABCD Study: Associations with Resting State Functional Connectivity and Perceived Discrimination'

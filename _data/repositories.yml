@@ -4,8 +4,12 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - donishadsmith/nifti2bids
+  - donishadsmith/neuro_pipelines
+  - donishadsmith/bidsaid
   - donishadsmith/neurocaps
   - donishadsmith/vswift
-  - donishadsmith/FIU-DEI-R-Workshop
-  - donishadsmith/ABCD-Descriptive-Inferential-Stats
+  - donishadsmith/R-Workshop
+  - donishadsmith/Engram
+  - donishadsmith/Castle_Descent
+  - donishadsmith/chip-8-emulator
+

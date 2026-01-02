@@ -19,90 +19,85 @@
       institution: Florida International University, Miami, Florida, USA
       year: 2025
       description:
-        - 'Dissertation: "Neurobiological Mechanisms of Physics Learning"'
-        - "Advisor: Dr. Angela Laird"
-    - title: M.Sc. in Cognitive Neuroscience
-      institution: Florida International University, Miami, Florida, USA
-      year: 2022
-      description:
-        - 'Thesis: "Task-based attentional and default mode connectivity associated with science and math anxiety profiles among university physics students"'
-        - "Advisor: Dr. Angela Laird"
+        - M.Sc. en route Aug 2022
     - title: B.Sc. in Biology (Cum Laude)
       institution: Florida International University, Miami, Florida, USA
       year: 2018
       description:
+        - Minor in Chemistry
         - Quantifying Biology in the Classroom (QBIC) track
-        - Honor's College
+        - Honors College
 
 - title: Experience
   type: time_table
   contents:
     - title: Postdoctoral Researcher
       institution: Johns Hopkins University School of Medicine, Baltimore, Maryland
-      year: 2025 - Current
+      year: 2025 - Present
       description:
-        - Built automated pipelines to convert unstructured neuroimaging and behavioral datasets to BIDS-compliant format for integration with modern analysis tools
-        - Migrated workflows to HPC clusters and containerized pipelines with Singularity to ensure consistent execution across compute environments
+        - "Advisor: Dr. Kristin Bigos"
+        - Built the lab's PHI-compliant HPC infrastructure, replacing manual workflows with containerized (Apptainer), SLURM-orchestrated pipelines, allowing for batch-processing of terabytes of 3D/4D imaging data
+        - Automated a standardization pipeline for two blinded, multi-session pharmacological studies, reconstructing acquisition metadata from NIfTI headers into a common BIDS schema and deterministically reconciling drug-to-session mappings
+        - Engineered parallelized, end-to-end pipelines chaining GLM/gPPI modeling with configurable denoising, parametric and nonparametric group-level inference, and cluster identification, with automated HTML QC reports
+        - Developed CLI and Streamlit web applications enabling non-technical lab staff to independently run multi-session data conversion, event-file generation, and clinical-score PDF extraction
+        - Designed and deployed a containerized AFNI brain-atlas service (FastAPI, Podman) on Oracle Cloud with a Streamlit frontend for remote brain-region lookup by coordinate, removing the need for local neuroimaging software installations
     - title: Graduate Researcher
       institution: Florida International University, Miami, Florida
       year: 2019 - 2025
       description:
-        - Developed a k-means clustering pipeline to characterize dynamic brain state changes associated with learning in longitudinal fMRI timeseries data
-        - Built post-processing pipelines using fMRIPrep and MRIQC to extract and denoise timeseries data, minimizing motion artifacts and increasing signal-to-noise for downstream statistical modeling
-        - Created statistical models (e.g. Linear Mixed Effects, Structural Equation Modeling, Latent Profile Analysis) to examine brain-behavioral relationships
-        - Analyzed staff demographic data for the ABCD Study consortium using R, implementing hypothesis testing and data visualization to inform decisions for a multi-site research task force
-        - Designed and delivered an introductory workshop on R programming and Tidyverse for the Diversity, Equity, and Inclusion program, instructing 20+ graduate students on data manipulation and visualization
-        - Provided statistical consultation on collaborative projects, applying latent and linear methods to neuroimaging and tabular data
-    - title: Graduate Teaching Assistant
-      institution: Florida International University, Miami, Florida
-      year: 2020 - 2022
-      description:
-        - Provided instructional support and targeted tutoring for undergraduate psychology statistics courses
+        - "Advisor: Dr. Angela Laird"
+        - Developed and published a k-means clustering pipeline to characterize dynamic brain state transitions in longitudinal fMRI data, identifying distinct transition patterns across timepoints
+        - Applied linear mixed-effects, structural equation models, and latent profile analyses to multi-session fMRI and behavioral data to identify dissociable brain-behavioral profiles, contributing to two peer-reviewed publications
+        - Analyzed staff demographic data for the ABCD Study consortium, implementing hypothesis testing and data visualization to inform decisions for a multi-site research task force
+        - Designed and delivered an R/Tidyverse workshop for 10+ graduate students through a DEI fellowship program, covering data analysis, manipulation, and visualization 
+    - title: Graduate Researcher
     - title: Medical Laboratory Scientist I
       institution: Florida Department of Health, Miami, Florida
       year: 2019
       description:
         - Conducted confirmatory diagnostic testing for HIV and syphilis for public health surveillance programs
 
-- title: Open Source Software
+- title: Open-Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/donishadsmith/nifti2bids">nifti2bids</a>
-      year: 2025 - Current
+    - title: <a href="https://github.com/donishadsmith/bidsaid">BIDS-Aid</a>
       description:
-        - Developed a Python package to standardize unstructured neuroimaging datasets by creating utilities to create and extract metadata information (e.g. single and multi-band slice timing) from NIfTI headers for BIDS sidecar generation
-        - Created tools to parse and convert semi-structured behavioral experiment data (including proprietary E-Prime formats) into BIDS-compliant event files
+        - Developed a Python package for post-hoc BIDS conversion of NIfTI datasets lacking source DICOMs, reconstructing JSON sidecars with acquisition metadata derived from image headers
+        - Built configurable parsers for Presentation and E-Prime behavioral logs, automating timing and accuracy extraction for block and event-related fMRI designs into BIDS-compliant events files
+        - Achieved a ~5x speedup in NIfTI compression by implementing a Rust extension (PyO3/maturin) for multithreaded compression, distributed as cross-platform abi3 wheels
+        - Published to PyPI with release-triggered CI/CD and >90% coverage on Python 3.10–3.14 across Linux, macOS, and Windows
     - title: <a href="https://github.com/donishadsmith/neurocaps">NeuroCAPs</a>
-      year: 2024 - Current
       description:
-        - Developed a Python package for fMRI brain state identification using k-means, achieving 5x faster multi-subject processing via multiprocessing with checkpointing support
-        - Incorporated clustering validation (e.g. Davies-Bouldin, Silhouette), KD-tree interpolation for volumetric-to-surface mapping, temporal dynamics metrics (e.g. transition probabilities), and an interactive visualization suite
-        - Deployed via Docker with headless VTK rendering and CLI/Jupyter interfaces; maintained >90% test coverage across OS platforms using pytest and GitHub Actions
+        - Built a Python package for brain state classification using k-means, with multiprocessing for multi-subject timeseries extraction
+        - Incorporated clustering validation (e.g., Davies-Bouldin, Silhouette), KNN-based spatial interpolation for parcellation coverage, temporal dynamics metrics (e.g., transition probabilities), and integrated visualizations (e.g., surface maps, network alignment)
+        - Deployed via Docker with headless VTK rendering and CLI/Jupyter interfaces; published to PyPI through release-triggered CI/CD with >90% coverage across multiple OS platforms
+    - title: <a href="https://github.com/donishadsmith/Engram">Engram</a>
+      description:
+        - Built a Game Boy Color emulator in Rust, with a CPU passing Blargg's test ROMs and a PPU rendering commercial CGB titles
+        - Implemented APU and memory bank controllers (MBC1, MBC2, MBC3, MBC5, HuC1) with battery and real-time-clock saves 
     - title: <a href="https://github.com/donishadsmith/vswift">vswift</a>
-      year: 2023 - Current
       description:
         - Created an R package for ML model evaluation, implementing custom stratified sampling, cross-validation, and nested cross-validation for hyperparameter tuning, with parallel processing support at the fold-level
         - Designed a unified interface supporting classification algorithms (e.g., Regularized Logistic Regression, SVM, XGBoost, Neural Networks) while preserving algorithm-specific parameter tuning
-        - Incorporated automated missing data imputation and multi-metric performance assessment (precision, recall, F1) with CLI output and visualizations, including ROC and Precision-Recall curves with AUC scores using trapezoidal rule
+        - Incorporated automated missing data imputation and multi-metric performance assessment (e.g., precision, recall, F1) with CLI output and visualizations, including ROC and Precision-Recall curves with AUC scores
 
-- title: Honors and Awards
+- title: Fellowships, Honors & Scolarships
   type: time_table
   contents:
     - year: 2024 - 2025
       items:
-        - Dissertation Year Fellowship
-    - year: 2022
+        - Dissertation Year Fellowship ($20,000 across two semesters)
+    - year: 2022 - 2023
       items:
-        - Diversity, Equity, and Inclusion Doctoral Fellowship
+        - DEI Doctoral Fellowship ($3,000 over three semesters)
     - year: 2017
       items:
         - NIGMS RISE Fellowship
-    - year: 2014
+    - year: 2014 - 2018
       items:
-        - FIU Ambassador Scholarship
-        - QBIC Scholarship
-        - Florida Academic Scholars
-        - Volunteer Recognition Award, Memorial Hospital West
+        - FIU Ambassador Scholarship (Full-Tuition Merit Scholarship)
+        - QBIC Scholarship ($1,000 per semester)
+        - Florida Academic Scholars Award (Highest State Merit Scholarship Tier)
 
 - title: Publications
   type: list
@@ -113,19 +108,10 @@
     - "[4] Smith D. D., Meca A, Bartley JE, Riedel MC, Salo T, Peraza JA, Bottenhorn KL, Laird RW, Pruden SM, Sutherland MT, Brewe E, Laird AR (2023). Task-based attentional and default mode connectivity associated with science and math anxiety profiles among university physics students. <i>Trends in Neuroscience and Education</i>. <a href='https://doi.org/10.1016/j.tine.2023.100204'>https://doi.org/10.1016/j.tine.2023.100204</a>"
     - "[5] Lobo, R. P., Bottenhorn, K. L., Riedel, M. C., Toma, A. I., Hare, M. M., Smith, D. D., Moor, A. C., Cowan, I. K., Valdes, J. A., Bartley, J. E., Salo, T., Boeving, E. R., Pankey, B., Sutherland, M. T., Musser, E. D., & Laird, A. R. (2022). Neural systems underlying RDoC social constructs: An activation likelihood estimation meta-analysis. <i>Neuroscience & Biobehavioral Reviews</i>. <a href='https://doi.org/10.1016/j.neubiorev.2022.104971'>https://doi.org/10.1016/j.neubiorev.2022.104971</a>"
 
-- title: Preprints
-  type: list
-  contents:
-    - "[1] Smith D. D., Bartley JE, Riedel MC, Salo T, Peraza JA, Bottenhorn KL, Laird RW, Pruden SM, Sutherland MT, Brewe E, Laird AR (2025). Hippocampal functional connectivity changes associated with active and lecture-based physics learning. <i>bioRxiv</i>. <a href='https://doi.org/10.1101/2025.09.22.677908'>https://doi.org/10.1101/2025.09.22.677908</a>"
-    - "[2] Hampson, C. L., Peraza, J. A., Guerrero, L. M., Bottenhorn, K. L., Riedel, M. C., Almuquin, F., Smith, D. D., Schmarder, K. M., Crooks, K. E., Lobo, R. P., Sutherland, M. T., Musser, E. D., Dai, Y., Agarwal, R., Saeed, F., & Laird, A. R. (2025). Habenula alterations in resting state functional connectivity among autistic individuals. <a href='https://doi.org/10.1101/2025.05.14.653992'>https://doi.org/10.1101/2025.05.14.653992</a>"
-
 - title: Conferences & Presentations
   type: time_table
   contents:
-    - title: "Habenula alterations in resting state functional connectivity in autism"
-      year: 2025
-      description: "Poster at the 31st Annual Meeting of the Organization for Human Brain Mapping, Brisbane, Australia (Accepted)"
-    - title: "Habenula alterations in resting state functional connectivity in autism spectrum disorder"
+    - title: "Longitudinal Changes in Dynamic Functional Connectivity Associated with Physics Learning"
       year: 2024
       description: "Poster at the University of Miami's 34th Annual Neuroscience Research Day, Miami, FL"
     - title: "Longitudinal Changes in Dynamic Functional Connectivity Associated with Physics Learning"
@@ -135,10 +121,10 @@
       year: 2023
       description: "Presented at the 29th Annual Meeting of the Organization for Human Brain Mapping, Montréal, Canada"
 
-- title: Reviewer
+- title: Peer Review
   type: time_table
   contents:
-    - year: 2025 - Current
+    - year: 2025 - Present
       items:
         - Journal of Open Source Software
         - npj Science of Learning
@@ -147,8 +133,8 @@
   type: map
   contents:
     - name: Programming Languages
-      value: Python, R, Shell Scripting (Bash), SQL
+      value: Python, R, Rust, Unix Shell Scripting (Bash)
     - name: Computing & Development
-      value: High-Performance Computing, CI/CD (Git, GitHub Actions, Docker, Singularity)
+      value: High-Performance Computing, CI/CD (Git, GitHub Actions, Docker, Podman, Singularity/Apptainer), Cloud Computing (Oracle Cloud Infrastructure)
     - name: Neuroimaging Tools
-      value: Nilearn, fMRIPrep, AFNI, EPRIME, PsychoPy
+      value: Nilearn, fMRIPrep, AFNI, FSL, E-Prime, Presentation, PsychoPy 

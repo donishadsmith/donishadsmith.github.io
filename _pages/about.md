@@ -25,4 +25,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a cognitive neuroscientist with a PhD from Florida International University, now a Postdoctoral Research Fellow at Johns Hopkins School of Medicine. I specialize in fMRI analysis (static and dynamic functional connectivity) and build open-source tools for neuroimaging and data science.
+Cognitive neuroscientist and research software engineer. I build reproducible neuroimaging pipelines and open-source Python/R packages for brain imaging and machine learning, with a focus on scalable HPC workflows and rigorous software practices. PhD from Florida International University; currently a Postdoctoral Research Fellow at Johns Hopkins School of Medicine.
